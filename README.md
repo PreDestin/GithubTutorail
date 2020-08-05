@@ -10,7 +10,3 @@ GitRepository New Branch Creation:
 
 $-  git branch  //check the exsisting branch
 $-  git checkout <branchname>  //select the new branch
-git remote
-git fetch
-push
-pull
