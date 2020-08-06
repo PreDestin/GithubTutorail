@@ -52,6 +52,12 @@ $-  git merge <branchname  //7(b)
 //gives cleaner code and linearity is promoted
 $-  git checkout <branchname>  //8(a)
 $-  git rebase master  //8(b)
+
+//If I don't want the changes made in local repo to reflect in mater branch of
+//central repo and to keep that in a separate branch in central repo.Use below cmd
+$-  git checkout <branchname>
+$-  git push origin <branchname> //origin is the remote or the central repo.
+
 //After making all the necessary changes do push to the central repo.
 //Don't make frequent changes as it may affect other contributors works
 $-  git push
