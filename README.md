@@ -6,12 +6,13 @@ Git Repository Command:
 $-  git clone <repourl>//1
 
 //If you are starting a very new project use init to create a new repo
-$-  git init//1
+$-  git init //1
 
 Git Repository New Branch Creation:
 
-$-  git branch  //check the exsisting branch
-$-  git checkout <branchname>  //select the new branch
+$-  git branch  //check the exsisting branch.7(a)
+$-  git branch <branchname>  //create a new branch.7(b)
+$-  git checkout <branchname>  //switch to the new branch.7(c)
 
 //Add origin for proper connectivity between local and central repo.
 // We call remote repo as origin. this is for sync purpose
@@ -34,7 +35,7 @@ $-  git commit -m "Commit message for others to understand"//5(a)
 $-  git commit -a -m "Commit changes"//To commit multiple files at once.5(b)
 
 //To see how git stores all the commits use log command
-$-  git log
+$-  git log//6
 
 $-  git fetch
 //After making all the necessary changes do push to the central repo.
