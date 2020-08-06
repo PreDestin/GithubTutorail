@@ -18,8 +18,14 @@ $-  git checkout <branchname>  //switch to the new branch.7(c)
 // We call remote repo as origin. this is for sync purpose
 $-  git remote add origin "https://github.com/PreDestin/GithubTutorial.git"//2
 
-//Do pull to fetch files from central to local repo
+//pull cmd pulls all the new or modified files from central repo
+//and directly connects with the master branch.
 &-  git pull origin master//3
+
+//fetch cmd does the same as pull but it does not connect to the master
+//rather it places the fetched files in some other branch. So we have to merge
+//to see the changes in your local repo.
+$-  git fetch // git pull = git fetch + git merge
 
 //There is an intermediate between the workspace and the local repo
 //where the changes you make to the local repo by commit command are indexed.
@@ -37,7 +43,15 @@ $-  git commit -a -m "Commit changes"//To commit multiple files at once.5(b)
 //To see how git stores all the commits use log command
 $-  git log//6
 
-$-  git fetch
+//merge the branches to the master branch. First come back to master branch and
+//use merge command.
+$-  git checkout master  //7(a)
+$-  git merge <branchname  //7(b)
+
+//rebase cmd does the work of merge cmd and reduces the number of branches,
+//gives cleaner code and linearity is promoted
+$-  git checkout <branchname>  //8(a)
+$-  git rebase master  //8(b)
 //After making all the necessary changes do push to the central repo.
 //Don't make frequent changes as it may affect other contributors works
 $-  git push
