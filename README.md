@@ -61,3 +61,7 @@ $-  git push origin <branchname> //origin is the remote or the central repo.
 //After making all the necessary changes do push to the central repo.
 //Don't make frequent changes as it may affect other contributors works
 $-  git push
+
+//Git Stash And Git pop
+//You have to use git stash when you have new changes in your exsisting branch and want to have it after you change a branch
+//Git pop you have pop the branch tree when you reenter the old branch
